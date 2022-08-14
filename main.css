@@ -1,0 +1,1035 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Fredoka:wght@600;700&family=Rubik:wght@300&family=Tajawal&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  text-align: right;
+}
+
+:root {
+  --main_color:#ec3454;
+  --sub_color: white;
+}
+
+.nav1 {
+  background-color: #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+.nav1 button i {
+  color: var(--main_color);
+}
+.nav1 a {
+  color: var(--main_color);
+  font-size: 20px;
+}
+.nav1 a i {
+  font-size: 25px;
+  margin-right: 25px;
+}
+.nav1 a .logo {
+  font-size: 40px;
+}
+
+.nav1 a:hover {
+  color: #f57c7c;
+}
+
+@media (max-width: 500px) {
+  .nav1 .navbar-brand {
+    margin-right: 0;
+  }
+}
+#section1 {
+  background-image: url(image/header.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--sub_color);
+}
+#section1 div h1 {
+  font-size: 130px;
+  transform: rotate(-15deg);
+  margin-bottom: 40px;
+}
+#section1 div h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+#section1 div button {
+  background-color: transparent;
+  border: transparent;
+}
+#section1 div button img {
+  width: 300px;
+}
+
+#section2 {
+  background-image: url(image/favor-bg.png);
+  background-size: cover;
+  padding: 50px 0;
+}
+#section2 .title {
+  text-align: center;
+}
+#section2 form {
+  padding: 0 150px;
+  margin: 70px 0;
+}
+#section2 form input,
+#section2 form select {
+  border-radius: 15px;
+  height: 50px;
+}
+#section2 .row {
+  padding: 0 20px;
+}
+#section2 a {
+  text-decoration: none;
+  color: black;
+}
+#section2 a .item {
+  background-color: var(--sub_color);
+  padding: 20px 0;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#section2 a .item img {
+  width: 150px;
+}
+#section2 a .item .text {
+  text-align: center;
+}
+#section2 a .item .text h2 {
+  color: var(--main_color);
+  margin-bottom: 20px;
+  font-size: 45px;
+}
+#section2 a .item .text i {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+#section2 a .item .state {
+  text-align: center;
+}
+#section2 a .item .pink {
+  color: var(--main_color);
+}
+#section2 a .item .green {
+  color: green;
+}
+#section2 a .item .red {
+  color: red;
+}
+
+#section2 a .item:hover {
+  box-shadow: 2px 2px 20px 5px rgb(77, 77, 77);
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  #section2 form {
+    padding: 0 50px;
+  }
+  #section2 .row {
+    padding: 0 20px;
+  }
+  #section2 .item {
+    flex-direction: column;
+  }
+  #section2 .item img {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 650px) {
+  #section2 form {
+    padding: 0 20px;
+  }
+  #section2 .row {
+    padding: 0 10px;
+  }
+  #section2 .item {
+    flex-direction: column;
+  }
+  #section2 .item .text h2 {
+    font-size: 30px;
+  }
+  #section2 .item img {
+    width: 150px;
+    margin-bottom: 15px;
+  }
+}
+#section3 {
+  padding: 100px 0;
+}
+#section3 .row {
+  padding: 0 50px;
+  justify-content: center;
+}
+#section3 .contant1 {
+  background-image: url(image/rest-bg.jpg);
+  background-size: cover;
+  padding: 50px 50px;
+  text-align: center;
+  border-radius: 30px;
+}
+#section3 .contant1 .text1 {
+  font-size: 30px;
+  color: var(--sub_color);
+}
+#section3 .contant1 .text1 p {
+  line-height: 2em;
+}
+#section3 .contant1 .text1 button {
+  background-image: linear-gradient(120deg, rgb(206, 148, 148), rgb(134, 23, 47));
+  padding: 10px 20px;
+  border: transparent;
+  border-radius: 20px;
+  font-size: 20px;
+}
+#section3 .contant1 .text1 button a {
+  color: var(--sub_color);
+  text-decoration: none;
+}
+#section3 .contant2 {
+  padding: 0 50px;
+}
+#section3 .contant2 img {
+  width: 100%;
+  height: 400px;
+}
+
+@media (max-width: 692px) {
+  #section3 .row {
+    padding: 0 10px;
+  }
+  #section3 .contant1 .text1 {
+    font-size: 25px;
+  }
+}
+#section4 {
+  padding-top: 50px;
+  background-image: url(image/app-bg.png);
+  background-size: cover;
+}
+#section4 .row {
+  padding: 0 90px;
+}
+#section4 .row .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#section4 .row .text p {
+  font-size: 35px;
+  color: var(--sub_color);
+  margin-bottom: 15px;
+}
+#section4 .row .text button {
+  background: transparent;
+  border: transparent;
+  position: relative;
+}
+#section4 .row .text button img {
+  width: 250px;
+}
+#section4 .row .image img {
+  width: 100%;
+}
+
+@media (max-width: 711px) {
+  #section4 .row {
+    padding: 0 10px;
+  }
+  #section4 .row .text p {
+    font-size: 25px;
+  }
+}
+#foot {
+  background-image: url(image/footerbg.png);
+  background-size: cover;
+  text-align: right;
+}
+#foot .foott {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 50px;
+}
+#foot .foott .text {
+  color: var(--sub_color);
+  width: 100%;
+}
+#foot .foott .text .link a {
+  font-size: 25px;
+  margin-left: 15px;
+  color: var(--sub_color);
+  text-decoration: none;
+}
+#foot .foott .imag {
+  width: 300px;
+}
+#foot .foott .imag img {
+  width: 100%;
+}
+
+#foot .foott .text .link a:hover {
+  color: var(--main_color);
+}
+
+@media (max-width: 900px) {
+  #foot .foott {
+    padding: 50px 10px;
+  }
+  #foot .foott .imag img {
+    width: 250px;
+  }
+}
+@media (max-width: 780px) {
+  #foot .foott {
+    flex-direction: column;
+  }
+}
+#p-section1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(image/rest-bg.jpg);
+  text-align: center;
+}
+#p-section1 .contant img {
+  width: 200px;
+}
+#p-section1 .contant h1 {
+  font-size: 50px;
+  color: var(--sub_color);
+  margin: 25px 0;
+}
+#p-section1 .contant .star {
+  background-color: var(--sub_color);
+  padding: 10px 0;
+  border-radius: 50px;
+}
+#p-section1 .contant .star i {
+  font-size: 25px;
+}
+#p-section1 .contant .star .pink {
+  color: var(--main_color);
+}
+
+#p-section2 {
+  background-image: url(image/favor-bg.png);
+  background-size: cover;
+}
+#p-section2 .row {
+  padding: 50px 50px;
+  text-align: center;
+}
+#p-section2 .row .card {
+  border-radius: 30px;
+}
+#p-section2 .row .card .card-title {
+  font-size: 25px;
+  color: var(--main_color);
+}
+#p-section2 .row .card .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+#p-section2 .row .card .text p {
+  margin: 0;
+  font-size: 20px;
+}
+#p-section2 .row .card .text i {
+  font-size: 25px;
+  color: var(--main_color);
+  margin-left: 15px;
+}
+#p-section2 .row .card button {
+  padding: 10px 35px;
+  background-color: var(--main_color);
+  border-radius: 15px;
+  border: 1px solid var(--sub_color);
+}
+#p-section2 .row .card button a {
+  color: var(--sub_color);
+  text-decoration: none;
+}
+
+#p-section2 .row .card:hover {
+  box-shadow: 2px 2px 20px 5px rgb(77, 77, 77);
+}
+
+#o-section {
+  margin-top: 140px;
+  margin-bottom: 70px;
+}
+#o-section h1 {
+  text-align: right;
+  color: var(--main_color);
+  margin-right: 50px;
+  padding-right: 20px;
+  margin-bottom: 50px;
+  border-right: 4px solid var(--main_color);
+}
+#o-section .row {
+  padding: 0 70px;
+}
+#o-section .row img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#I-section {
+  padding: 120px 0;
+}
+#I-section .card {
+  border: transparent;
+  padding: 0 20px;
+}
+#I-section img {
+  width: 100%;
+  height: 100%;
+}
+#I-section .contant {
+  text-align: right;
+  padding-right: 50px;
+}
+#I-section .contant h1 {
+  font-size: 50px;
+  color: var(--main_color);
+  margin-bottom: 35px;
+}
+#I-section .contant .text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+#I-section .contant .text p {
+  margin: 0;
+  font-size: 20px;
+}
+#I-section .contant .text i {
+  font-size: 30px;
+  color: var(--main_color);
+  margin-left: 20px;
+}
+#I-section .contant button {
+  background: transparent;
+  border: transparent;
+  background-image: linear-gradient(120deg, rgb(206, 148, 148), rgb(134, 23, 47));
+  padding: 10px 15px;
+  border: 1px solid var(--sub_color);
+  border-radius: 15px;
+  margin-top: 20px;
+}
+#I-section .contant button a {
+  text-decoration: none;
+}
+#I-section .contant button a p {
+  color: var(--sub_color);
+  margin: 0;
+}
+#I-section .contant button a p span {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+#I-section2 {
+  text-align: right;
+  padding: 20px 50px;
+}
+#I-section2 h1 {
+  padding-right: 20px;
+  border-right: 4px solid var(--main_color);
+  color: var(--main_color);
+  margin-bottom: 50px;
+}
+#I-section2 .contant {
+  text-align: center;
+  background-color: rgb(236, 235, 235);
+  padding: 40px;
+}
+#I-section2 .contant .star {
+  display: inline;
+  background-color: var(--sub_color);
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+#I-section2 .contant .star i {
+  font-size: 25px;
+  margin: 0;
+}
+#I-section2 .contant .star .pink {
+  color: var(--main_color);
+}
+#I-section2 .contant .text {
+  margin-top: 40px;
+  color: var(--main_color);
+}
+#I-section2 .contant .text p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#I-section3 {
+  padding: 30px 50px;
+}
+#I-section3 h1 {
+  padding-right: 20px;
+  border-right: 4px solid var(--main_color);
+  color: var(--main_color);
+}
+#I-section3 .contant {
+  text-align: center;
+  margin-top: 50px;
+}
+#I-section3 .contant .star {
+  display: inline;
+  background-color: rgb(240, 235, 235);
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+#I-section3 .contant .star i {
+  font-size: 25px;
+  margin: 0;
+}
+#I-section3 .contant .star .pink {
+  color: var(--main_color);
+}
+#I-section3 .contant form {
+  margin-top: 50px;
+}
+#I-section3 .contant form textarea {
+  width: 100%;
+  border: 2px solid #ddd;
+  padding: 15px;
+  font-size: 30px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 20px 3px #ddd;
+  outline: #ec3454;
+}
+#I-section3 .contant form button {
+  background: transparent;
+  border: transparent;
+  background-image: linear-gradient(120deg, rgb(206, 148, 148), rgb(134, 23, 47));
+  padding: 10px 20px;
+  border: 1px solid var(--sub_color);
+  border-radius: 15px;
+  margin-top: 20px;
+}
+#I-section3 .contant form button a {
+  color: var(--sub_color);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#I-section3 .contant .star i:hover {
+  color: var(--main_color);
+}
+
+#I-section4 {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 70;
+  transition: 0.5s;
+}
+#I-section4 .contant1 {
+  background-color: var(--sub_color);
+  box-shadow: 2px 2px 10px 2px #ddd;
+  padding: 20px 30px;
+  color: var(--main_color);
+  border-radius: 15px;
+  position: relative;
+}
+#I-section4 .contant1 h2 {
+  font-size: 40px;
+}
+#I-section4 .contant1 p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+#I-section4 .contant1 a {
+  color: var(--sub_color);
+  text-decoration: none;
+  background-color: var(--main_color);
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+#I-section4 .contant1 span {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+}
+
+#c-section1,
+#s-section2 {
+  padding: 120px;
+  min-height: 100vh;
+  background-image: url(image/cart-bg.png);
+  background-size: cover;
+}
+#c-section1 .contant1,
+#c-section1 .contant2,
+#s-section2 .contant1,
+#s-section2 .contant2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--sub_color);
+  box-shadow: 2px 2px 10px 2px #ddd;
+  border-radius: 50px;
+  padding: 30px 30px;
+}
+#c-section1 .contant1 .item,
+#c-section1 .contant2 .item,
+#s-section2 .contant1 .item,
+#s-section2 .contant2 .item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#c-section1 .contant1 .item img,
+#c-section1 .contant2 .item img,
+#s-section2 .contant1 .item img,
+#s-section2 .contant2 .item img {
+  width: 200px;
+}
+#c-section1 .contant1 .item .text,
+#c-section1 .contant2 .item .text,
+#s-section2 .contant1 .item .text,
+#s-section2 .contant2 .item .text {
+  padding: 0 30px;
+}
+#c-section1 .contant1 .item .text h2,
+#c-section1 .contant2 .item .text h2,
+#s-section2 .contant1 .item .text h2,
+#s-section2 .contant2 .item .text h2 {
+  color: var(--main_color);
+  font-weight: bold;
+}
+#c-section1 .contant1 .item .text p,
+#c-section1 .contant2 .item .text p,
+#s-section2 .contant1 .item .text p,
+#s-section2 .contant2 .item .text p {
+  margin-bottom: 7px;
+  color: #b88080;
+}
+#c-section1 .contant1 .btnGroup,
+#c-section1 .contant2 .btnGroup,
+#s-section2 .contant1 .btnGroup,
+#s-section2 .contant2 .btnGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#c-section1 .contant1 .btnGroup button,
+#c-section1 .contant2 .btnGroup button,
+#s-section2 .contant1 .btnGroup button,
+#s-section2 .contant2 .btnGroup button {
+  padding: 10px 0;
+  width: 100px;
+  border-radius: 15px;
+  border: transparent;
+  color: var(--sub_color);
+}
+#c-section1 .contant1 .btnGroup #btn1,
+#c-section1 .contant1 .btnGroup #btn11,
+#c-section1 .contant2 .btnGroup #btn1,
+#c-section1 .contant2 .btnGroup #btn11,
+#s-section2 .contant1 .btnGroup #btn1,
+#s-section2 .contant1 .btnGroup #btn11,
+#s-section2 .contant2 .btnGroup #btn1,
+#s-section2 .contant2 .btnGroup #btn11 {
+  margin-bottom: 20px;
+  background-color: green;
+}
+#c-section1 .contant1 .btnGroup #btn2,
+#c-section1 .contant1 .btnGroup #btn22,
+#c-section1 .contant2 .btnGroup #btn2,
+#c-section1 .contant2 .btnGroup #btn22,
+#s-section2 .contant1 .btnGroup #btn2,
+#s-section2 .contant1 .btnGroup #btn22,
+#s-section2 .contant2 .btnGroup #btn2,
+#s-section2 .contant2 .btnGroup #btn22 {
+  margin-bottom: 20px;
+  background-color: red;
+}
+#c-section1 .contant1 .btnGroup #done1, #c-section1 .contant1 .btnGroup #done2,
+#c-section1 .contant2 .btnGroup #done1,
+#c-section1 .contant2 .btnGroup #done2,
+#s-section2 .contant1 .btnGroup #done1,
+#s-section2 .contant1 .btnGroup #done2,
+#s-section2 .contant2 .btnGroup #done1,
+#s-section2 .contant2 .btnGroup #done2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: green;
+  background: transparent;
+  font-size: 20px;
+  opacity: 0;
+  display: none;
+}
+
+#s-section2 {
+  background: none;
+  padding: 0;
+}
+
+@media (max-width: 925px) {
+  #c-section1 {
+    padding: 120px 20px;
+  }
+}
+@media (max-width: 740px) {
+  #c-section1 .contant1,
+#c-section1 .contant2,
+#s-section2 .contant1,
+#s-section2 .contant2 {
+    flex-direction: column;
+    padding: 30px 10px;
+  }
+  #c-section1 .contant1 .btnGroup,
+#c-section1 .contant2 .btnGroup,
+#s-section2 .contant1 .btnGroup,
+#s-section2 .contant2 .btnGroup {
+    flex-direction: row;
+    margin-top: 30px;
+  }
+  #c-section1 .contant1 .btnGroup #btn1,
+#c-section1 .contant1 .btnGroup #btn11,
+#c-section1 .contant2 .btnGroup #btn1,
+#c-section1 .contant2 .btnGroup #btn11,
+#s-section2 .contant1 .btnGroup #btn1,
+#s-section2 .contant1 .btnGroup #btn11,
+#s-section2 .contant2 .btnGroup #btn1,
+#s-section2 .contant2 .btnGroup #btn11 {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 971px) {
+  #s-section2 .contant1,
+#s-section2 .contant2 {
+    flex-direction: column;
+    padding: 30px 10px;
+  }
+  #s-section2 .contant1 .btnGroup,
+#s-section2 .contant2 .btnGroup {
+    flex-direction: row;
+    margin-top: 30px;
+  }
+  #s-section2 .contant1 .btnGroup #btn1,
+#s-section2 .contant1 .btnGroup #btn11,
+#s-section2 .contant2 .btnGroup #btn1,
+#s-section2 .contant2 .btnGroup #btn11 {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 570px) {
+  #c-section1 .contant1 .item img,
+#c-section1 .contant2 .item img,
+#s-section2 .contant1 .item img,
+#s-section2 .contant2 .item img {
+    width: 160px;
+  }
+  #c-section1 .contant1 .item .text,
+#c-section1 .contant2 .item .text,
+#s-section2 .contant1 .item .text,
+#s-section2 .contant2 .item .text {
+    padding: 0 15px;
+  }
+  #c-section1 .contant1 .item .text h2,
+#c-section1 .contant2 .item .text h2,
+#s-section2 .contant1 .item .text h2,
+#s-section2 .contant2 .item .text h2 {
+    font-size: 20px;
+  }
+  #c-section1 .contant1 .item .text p,
+#c-section1 .contant2 .item .text p,
+#s-section2 .contant1 .item .text p,
+#s-section2 .contant2 .item .text p {
+    font-size: 13px;
+  }
+}
+#t-section {
+  padding: 120px 250px;
+  background-image: url(image/favor-bg.png);
+}
+#t-section form {
+  background-image: linear-gradient(120deg, rgb(209, 187, 187), rgb(245, 225, 225));
+  padding: 30px 50px;
+  border-radius: 50px;
+  text-align: center;
+}
+#t-section form .title {
+  color: var(--sub_color);
+  font-size: 40px;
+  padding-right: 20px;
+  margin-bottom: 40px;
+}
+#t-section form .inp,
+#t-section form textarea {
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 18px;
+  outline: transparent;
+}
+#t-section form .inp {
+  height: 60px;
+}
+#t-section form .radioGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#t-section form .radioGroup input {
+  margin-left: 10px;
+}
+#t-section form .radioGroup label {
+  color: var(--main_color);
+  font-size: 20px;
+}
+#t-section form button {
+  background: transparent;
+  border: transparent;
+  background-image: linear-gradient(120deg, rgb(206, 148, 148), rgb(134, 23, 47));
+  padding: 10px 20px;
+  width: 150px;
+  color: var(--sub_color);
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+#l-section {
+  padding: 180px 250px;
+  background-image: url(image/bg\ img.png);
+}
+#l-section form {
+  box-shadow: 2px 2px 10px 5px #ddd;
+  border-radius: 50px;
+  padding: 40px 50px;
+  text-align: center;
+  background-color: var(--sub_color);
+}
+#l-section form i {
+  font-size: 80px;
+  color: var(--main_color);
+  margin-bottom: 70px;
+}
+#l-section form input {
+  width: 100%;
+  background: transparent;
+  border: transparent;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 30px;
+  outline-color: var(--main_color);
+}
+#l-section form button {
+  background: transparent;
+  border: transparent;
+  background-color: var(--sub_color);
+  border: 2px solid var(--main_color);
+  padding: 5px 10px;
+  width: 150px;
+  font-size: 20px;
+  color: var(--main_color);
+  border-radius: 15px;
+  margin: 20px 0;
+  outline: transparent;
+}
+#l-section form .item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#l-section form .item a {
+  color: var(--main_color);
+  font-size: 18px;
+  text-decoration: none;
+}
+#l-section form .item1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+#l-section form .item1 .rad {
+  width: 20px;
+  margin: 0;
+  margin-left: 15px;
+}
+#l-section form .item1 label {
+  margin: 0;
+  color: var(--main_color);
+}
+
+@media (max-width: 1180px) {
+  #t-section,
+#l-section {
+    padding: 120px 180px;
+  }
+}
+@media (max-width: 1000px) {
+  #t-section,
+#l-section {
+    padding: 120px 130px;
+  }
+}
+@media (max-width: 880px) {
+  #t-section,
+#l-section {
+    padding: 120px 90px;
+  }
+}
+@media (max-width: 700px) {
+  #t-section,
+#l-section {
+    padding: 120px 50px;
+  }
+}
+@media (max-width: 600px) {
+  #t-section,
+#l-section {
+    padding: 120px 30px;
+  }
+  #t-section form,
+#l-section form {
+    padding: 30px 20px;
+  }
+}
+#s-section1 {
+  padding: 120px 0;
+  min-height: 100vh;
+  background-image: url(image/meal-bg.jpg);
+  background-size: cover;
+}
+#s-section1 form input {
+  width: 49%;
+  outline-width: 0;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid var(--main_color);
+}
+#s-section1 form textarea {
+  width: 98%;
+  outline-width: 0;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid var(--main_color);
+}
+#s-section1 form button {
+  background: transparent;
+  border: transparent;
+  background-color: var(--sub_color);
+  border: 2px solid var(--main_color);
+  padding: 5px 10px;
+  width: 150px;
+  font-size: 20px;
+  color: var(--main_color);
+  border-radius: 15px;
+  margin: 20px 0;
+  outline: transparent;
+}
+
+@media (max-width: 500px) {
+  #section1 div h1 {
+    font-size: 100px;
+  }
+  #section1 div h2 {
+    font-size: 20px;
+  }
+  #section1 div button img {
+    width: 200px;
+  }
+  #section2 .title {
+    font-size: 30px;
+  }
+  #section2 form {
+    padding: 0 20px;
+  }
+  #section2 .row {
+    padding: 0 10px;
+  }
+  #section2 a .item {
+    flex-direction: column;
+  }
+  #section2 a .item .text h2 {
+    font-size: 30px;
+  }
+  #section2 a .item img {
+    width: 120px;
+    margin-bottom: 15px;
+  }
+  #section3 .contant2 {
+    padding: 0 50px;
+  }
+  #section3 .contant2 img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  #section3 .contant1 {
+    padding: 30px 10px;
+  }
+  #section3 .contant1 .text1 {
+    font-size: 20px;
+  }
+  #foot .foott .imag {
+    width: 200px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  #foot .foott .imag img {
+    width: 100%;
+  }
+  #o-section h1 {
+    margin-right: 30px;
+    padding-right: 10px;
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  #o-section .row {
+    padding: 0 30px;
+  }
+  #t-section {
+    padding: 120px 10px;
+  }
+  #t-section form {
+    padding: 20px 10px;
+  }
+}/*# sourceMappingURL=main.css.map */
